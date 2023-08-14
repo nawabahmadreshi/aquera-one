@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="98" height="98" viewBox="0 0 98 98" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <defs>
+                <path id="c" d="M435,576 C435,576 571.772295,537.153456 825.5,547.5 C1079.22771,557.846544 1244,571.5 1606,607.5 C1968,643.5 2335,576 2335,576 L2335,1170 L435,1170 L435,576 Z"/>
+                <filter id="b" width="106.3%" height="119.2%" x="-3.2%" y="-14.4%" filterUnits="objectBoundingBox">
+                  <feOffset dy="-30" in="SourceAlpha" result="shadowOffsetOuter1"/>
+                  <feGaussianBlur stdDeviation="15" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+                  <feColorMatrix values="0 0 0 0 0.239215686 0 0 0 0 0.22745098 0 0 0 0 0.37254902 0 0 0 0.2 0" in="shadowBlurOuter1"/>
+                </filter>
+                <rect id="f" width="270" height="270" rx="8"/>
+                <filter id="e" width="131.5%" height="131.5%" x="-15.7%" y="-12%" filterUnits="objectBoundingBox">
+                  <feOffset dy="10" in="SourceAlpha" result="shadowOffsetOuter1"/>
+                  <feGaussianBlur stdDeviation="12.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+                  <feColorMatrix values="0 0 0 0 0.243137255 0 0 0 0 0.235294118 0 0 0 0 0.384313725 0 0 0 0.1 0" in="shadowBlurOuter1"/>
+                </filter>
+                <linearGradient id="h" x1="0%" x2="97.178%" y1="0%" y2="100%">
+                  <stop stop-color="#504D7F" offset="0%"/>
+                  <stop stop-color="#3C3A5E" offset="100%"/>
+                </linearGradient>
+                <path id="g" d="M0,5.99922047 C0,2.68594249 2.67986017,0 5.99842118,0 L64.0015788,0 C67.3144154,0 70,2.68662393 70,5.99922047 L70,34.0007795 C70,37.3140575 67.3053516,40 64.0020939,40 L23.0189209,40 L9.04223633,52 L9.06396484,40 L5.99531982,40 C2.68419612,40 0,37.3133761 0,34.0007795 L0,5.99922047 Z"/>
+                <path id="i" d="M0,5.99922047 C0,2.68594249 2.67986017,0 5.99842118,0 L64.0015788,0 C67.3144154,0 70,2.68662393 70,5.99922047 L70,34.0007795 C70,37.3140575 67.3053516,40 64.0020939,40 L23.0189209,40 L9.04223633,52 L9.06396484,40 L5.99531982,40 C2.68419612,40 0,37.3133761 0,34.0007795 L0,5.99922047 Z"/>
+              </defs>
+              <g fill="none" fill-rule="evenodd" transform="translate(-1349 -548)">
+                <g transform="translate(1265 510)">
+                  <use fill="black" filter="url(#e)" xlink:href="#f"/>
+                  <use fill="#FFFFFF" xlink:href="#f"/>
+                  <g transform="translate(88 49)">
+                    <g transform="matrix(-1 0 0 1 90 24)">
+                      <use fill="#FFFFFF" xlink:href="#g"/>
+                      <path class="icon-color-stroke-primary" stroke="url(#h)" stroke-width="2" d="M10.0461853,49.8200281 L22.6485285,39 L64.0020939,39 C66.7564672,39 69,36.7583749 69,34.0007795 L69,5.99922047 C69,3.23862595 66.7618479,1 64.0015788,1 L5.99842118,1 C3.23429951,1 1,3.23607124 1,5.99922047 L1,34.0007795 C1,36.7614898 3.23687927,39 5.99531982,39 L10.0657772,39 L10.0461853,49.8200281 Z"/>
+                      <rect class="icon-color-fill-secondary" width="20" height="2" x="8" y="11" fill="#FFA15A" rx="1"/>
+                      <rect class="icon-color-fill-secondary" width="34" height="2" x="8" y="19" fill="#FFA15A" rx="1"/>
+                      <rect class="icon-color-fill-secondary" width="10" height="2" x="8" y="27" fill="#FFA15A" rx="1"/>
+                      <rect class="icon-color-fill-secondary" width="39" height="2" x="23" y="27" fill="#FFA15A" rx="1"/>
+                      <rect width="15" height="2" x="47" y="15" fill="#000000" rx="1"/>
+                      <rect width="29" height="2" x="33" y="8" fill="#000000" rx="1"/>
+                    </g>
+                    <use xlink:href="#i"/>
+                    <path fill="#F8F8F8" class="icon-color-stroke-primary" stroke="url(#h)" stroke-width="2" d="M10.0461853,49.8200281 L22.6485285,39 L64.0020939,39 C66.7564672,39 69,36.7583749 69,34.0007795 L69,5.99922047 C69,3.23862595 66.7618479,1 64.0015788,1 L5.99842118,1 C3.23429951,1 1,3.23607124 1,5.99922047 L1,34.0007795 C1,36.7614898 3.23687927,39 5.99531982,39 L10.0657772,39 L10.0461853,49.8200281 Z"/>
+                    <path stroke="#FFFFFF" stroke-width="6" d="M24.1300979,43 L6.03038952,58.5399158 L6.0585278,43 L5.99531982,43 C1.02708736,43 -3,38.9699764 -3,34.0007795 L-3,5.99922047 C-3,1.0276417 1.02445043,-3 5.99842118,-3 L64.0015788,-3 C68.9711765,-3 73,1.02967649 73,5.99922047 L73,34.0007795 C73,38.968276 68.9648448,43 64.0020939,43 L24.1300979,43 Z"/>
+                    <rect class="icon-color-fill-primary" width="20" height="2" x="8" y="11" fill="#504D7F" rx="1"/>
+                    <rect class="icon-color-fill-primary" width="34" height="2" x="8" y="19" fill="#504D7F" rx="1"/>
+                    <rect class="icon-color-fill-primary" width="10" height="2" x="8" y="27" fill="#504D7F" rx="1"/>
+                    <rect class="icon-color-fill-primary" width="39" height="2" x="23" y="27" fill="#504D7F" rx="1"/>
+                    <rect class="icon-color-fill-primary" width="15" height="2" x="47" y="19" fill="#504D7F" rx="1"/>
+                    <rect class="icon-color-fill-primary" width="29" height="2" x="33" y="11" fill="#504D7F" rx="1"/>
+                  </g>
+                </g>
+              </g>
+            </svg>

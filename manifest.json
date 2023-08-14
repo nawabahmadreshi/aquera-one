@@ -1,0 +1,1151 @@
+{
+  "name": "Aquera One",
+  "author": "Aquera Team",
+  "version": "3.13.8",
+  "api_version": 2,
+  "default_locale": "en-us",
+  "settings": [
+    {
+      "label": "Translations",
+      "variables": [
+        {
+          "identifier": "toggle_translations",
+          "type": "checkbox",
+          "description": "Turn this option to use dynamic content translations",
+          "label": "Use dynamic content translations",
+          "value": false
+        },
+        {
+          "identifier": "toggle_flags",
+          "type": "checkbox",
+          "description": "Turn this option to use flags in multilang dropdown",
+          "label": "Use flags in multilang dropdown",
+          "value": true
+        }
+      ]
+    },
+    {
+      "label": "Colors",
+      "variables": [
+        {
+          "identifier": "body_bg",
+          "type": "color",
+          "description": "Background color of your Help Center",
+          "label": "Background color",
+          "value": "rgba(255, 255, 255, 1)"
+        },
+        {
+          "identifier": "brand_primary",
+          "type": "color",
+          "description": "Brand primary color",
+          "label": "Primary color",
+          "value": "#276FD0"
+        },
+        {
+          "identifier": "brand_secondary",
+          "type": "color",
+          "description": "Brand secondary color",
+          "label": "Secondary color",
+          "value": "#4cae4c"
+        },
+        {
+          "identifier": "text_color",
+          "type": "color",
+          "description": "Text color for body and heading elements",
+          "label": "Text color",
+          "value": "#222"
+        },
+        {
+          "identifier": "link_color",
+          "type": "color",
+          "description": "Text color for link elements",
+          "label": "Link color",
+          "value": "#276FD0"
+        },
+        {
+          "identifier": "border_color",
+          "type": "color",
+          "description": "Color for border elements",
+          "label": "Border color",
+          "value": "#eee"
+        }
+      ]
+    },
+    {
+      "label": "Typography",
+      "variables": [
+        {
+          "identifier": "font_size_base",
+          "type": "text",
+          "description": "Size for body text",
+          "label": "Text size",
+          "value": "16px"
+        },
+        {
+          "identifier": "font_family_base",
+          "type": "list",
+          "description": "Font for body text",
+          "label": "Text font",
+          "value": "'Colfax', sans-serif",
+          "options": [
+            {
+              "label": "Colfax",
+              "value": "'Colfax', sans-serif"
+            },
+            {
+              "label": "Open Sans",
+              "value": "'Open Sans', sans-serif"
+            },
+            {
+              "label": "Roboto",
+              "value": "'Roboto', sans-serif"
+            },
+            {
+              "label": "Lato",
+              "value": "'Lato', sans-serif"
+            },
+            {
+              "label": "Slabo",
+              "value": "'Slabo 27px', serif"
+            },
+            {
+              "label": "Helvetica Neue",
+              "value": "'Helvetica Neue', Arial, Helvetica, sans-serif"
+            },
+            {
+              "label": "Lucida Grande",
+              "value": "'Lucida Grande', 'Lucida Sans', 'Lucida Sans Unicode', sans-serif"
+            },
+            {
+              "label": "Trebuchet MS",
+              "value": "'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif"
+            }
+          ]
+        },
+        {
+          "identifier": "line_height_base",
+          "type": "text",
+          "description": "Space between the lines of text",
+          "label": "Text line height",
+          "value": "1.5"
+        }
+      ]
+    },
+    {
+      "label": "Hero unit",
+      "variables": [
+        {
+          "identifier": "hero_show_image",
+          "type": "list",
+          "description": "Show hero unit image",
+          "label": "Show hero unit image",
+          "value": "yes",
+          "options": [
+            {
+              "label": "Yes",
+              "value": "yes"
+            },
+            {
+              "label": "No",
+              "value": "no"
+            }
+          ]
+        },
+        {
+          "identifier": "hero_homepage_image",
+          "type": "file",
+          "description": "Banner image",
+          "label": "Banner image"
+        },
+        {
+          "identifier": "hero_unit_mask_bg",
+          "type": "color",
+          "description": "Banner mask color",
+          "label": "Banner mask color",
+          "value": "rgba(0, 0, 0, 0.45)"
+        },
+        {
+          "identifier": "hero_unit_mask_opacity",
+          "type": "text",
+          "description": "Banner mask opacity",
+          "label": "Banner mask opacity",
+          "value": "0.6"
+        },
+        {
+          "identifier": "hero_title",
+          "type": "text",
+          "description": "Text above the search field",
+          "label": "Hero unit title",
+          "value": ""
+        },
+        {
+          "identifier": "search_placeholder",
+          "type": "text",
+          "description": "Placeholder text for the search field",
+          "label": "Search Placeholder",
+          "value": "Search in Aquera Help Center"
+        }
+      ]
+    },
+    {
+      "label": "Button",
+      "variables": [
+        {
+          "identifier": "button_color_1",
+          "type": "color",
+          "description": "Color for buttons",
+          "label": "Button bordered",
+          "value": "rgba(0, 94, 166, 1)"
+        }
+      ]
+    },
+    {
+      "label": "Brand",
+      "variables": [
+        {
+          "identifier": "logo_main",
+          "type": "file",
+          "description": "Company logo",
+          "label": "Logo for the homepage and search results"
+        },
+        {
+          "identifier": "logo",
+          "type": "file",
+          "description": "Company logo",
+          "label": "Logo for inner pages"
+        },
+        {
+          "identifier": "logo_height",
+          "type": "text",
+          "description": "Height of the logo",
+          "label": "Logo height",
+          "value": "50px"
+        },
+        {
+          "identifier": "favicon",
+          "type": "file",
+          "description": "Icon displayed in the address bar of your browser",
+          "label": "Favicon"
+        },
+        {
+          "identifier": "border_radius_base",
+          "type": "text",
+          "description": "Border radius for buttons, text field, etc.",
+          "label": "Border radius",
+          "value": "4px"
+        }
+      ]
+    },
+    {
+      "label": "Home page layout",
+      "variables": [
+        {
+          "identifier": "toggle_custom_blocks",
+          "type": "checkbox",
+          "description": "Toggle Custom blocks",
+          "label": "Show Custom blocks",
+          "value": false
+        },
+        {
+          "identifier": "toggle_promoted_articles",
+          "type": "checkbox",
+          "description": "Toggle Promoted articles component",
+          "label": "Show Promoted articles",
+          "value": true
+        },
+        {
+          "identifier": "toggle_category_list",
+          "type": "checkbox",
+          "description": "Toggle Category list component",
+          "label": "Show Category list",
+          "value": true
+        },
+        {
+          "identifier": "knowledge_base_name",
+          "type": "text",
+          "description": "Knowledge Base title",
+          "label": "Title",
+          "value": "Aquera Help Center"
+        }
+      ]
+    },
+    {
+      "label": "Custom Block 1",
+      "variables": [
+        {
+          "identifier": "custom_block_1_type",
+          "type": "list",
+          "description": "Toggle Custom Blocks component",
+          "label": "Custom block type",
+          "value": "custom",
+          "options": [
+            {
+              "label": "Hidden",
+              "value": "hidden"
+            },
+            {
+              "label": "Custom",
+              "value": "custom"
+            },
+            {
+              "label": "Community",
+              "value": "community"
+            },
+            {
+              "label": "Submit a request",
+              "value": "submit_a_request"
+            }
+          ]
+        },
+        {
+          "identifier": "custom_block_1_icon",
+          "type": "file",
+          "description": "The recommended dimensions: 100x100px",
+          "label": "Icon"
+        },
+        {
+          "identifier": "custom_block_1_title",
+          "type": "text",
+          "description": "Custom block title",
+          "label": "Title",
+          "value": "Title"
+        },
+        {
+          "identifier": "custom_block_1_description",
+          "type": "text",
+          "description": "Custom block description",
+          "label": "Description",
+          "value": "Learn about all our theme products and services"
+        },
+        {
+          "identifier": "custom_block_1_url",
+          "type": "text",
+          "description": "Custom block URL",
+          "label": "URL",
+          "value": "#"
+        }
+      ]
+    },
+    {
+      "label": "Custom Block 2",
+      "variables": [
+        {
+          "identifier": "custom_block_2_type",
+          "type": "list",
+          "description": "Toggle Custom Blocks component",
+          "label": "Custom block type",
+          "value": "custom",
+          "options": [
+            {
+              "label": "Hidden",
+              "value": "hidden"
+            },
+            {
+              "label": "Custom",
+              "value": "custom"
+            },
+            {
+              "label": "Community",
+              "value": "community"
+            },
+            {
+              "label": "Submit a request",
+              "value": "submit_a_request"
+            }
+          ]
+        },
+        {
+          "identifier": "custom_block_2_icon",
+          "type": "file",
+          "description": "The recommended dimensions: 100x100px",
+          "label": "Icon"
+        },
+        {
+          "identifier": "custom_block_2_title",
+          "type": "text",
+          "description": "Custom block title",
+          "label": "Title",
+          "value": "FAQ’s"
+        },
+        {
+          "identifier": "custom_block_2_description",
+          "type": "text",
+          "description": "Custom block description",
+          "label": "Description",
+          "value": "Have any questions? Find the answers to all of them"
+        },
+        {
+          "identifier": "custom_block_2_url",
+          "type": "text",
+          "description": "Custom block URL",
+          "label": "URL",
+          "value": "#"
+        }
+      ]
+    },
+    {
+      "label": "Custom Block 3",
+      "variables": [
+        {
+          "identifier": "custom_block_3_type",
+          "type": "list",
+          "description": "Toggle Custom Blocks component",
+          "label": "Custom block type",
+          "value": "community",
+          "options": [
+            {
+              "label": "Hidden",
+              "value": "hidden"
+            },
+            {
+              "label": "Custom",
+              "value": "custom"
+            },
+            {
+              "label": "Community",
+              "value": "community"
+            },
+            {
+              "label": "Submit a request",
+              "value": "submit_a_request"
+            }
+          ]
+        },
+        {
+          "identifier": "custom_block_3_icon",
+          "type": "file",
+          "description": "The recommended dimensions: 100x100px",
+          "label": "Icon"
+        },
+        {
+          "identifier": "custom_block_3_title",
+          "type": "text",
+          "description": "Custom block title",
+          "label": "Title",
+          "value": "Community"
+        },
+        {
+          "identifier": "custom_block_3_description",
+          "type": "text",
+          "description": "Custom block description",
+          "label": "Description",
+          "value": "Need help? We have you covered all the time"
+        },
+        {
+          "identifier": "custom_block_3_url",
+          "type": "text",
+          "description": "Custom block URL",
+          "label": "URL",
+          "value": "#"
+        }
+      ]
+    },
+    {
+      "label": "Custom Block 4",
+      "variables": [
+        {
+          "identifier": "custom_block_4_type",
+          "type": "list",
+          "description": "Toggle Custom Blocks component",
+          "label": "Custom block type",
+          "value": "submit_a_request",
+          "options": [
+            {
+              "label": "Hidden",
+              "value": "hidden"
+            },
+            {
+              "label": "Custom",
+              "value": "custom"
+            },
+            {
+              "label": "Community",
+              "value": "community"
+            },
+            {
+              "label": "Submit a request",
+              "value": "submit_a_request"
+            }
+          ]
+        },
+        {
+          "identifier": "custom_block_4_icon",
+          "type": "file",
+          "description": "The recommended dimensions: 100x100px",
+          "label": "Icon"
+        },
+        {
+          "identifier": "custom_block_4_title",
+          "type": "text",
+          "description": "Custom block title",
+          "label": "Title",
+          "value": "Submit a request"
+        },
+        {
+          "identifier": "custom_block_4_description",
+          "type": "text",
+          "description": "Custom block description",
+          "label": "Description",
+          "value": "Contact us through a specially prepared form"
+        },
+        {
+          "identifier": "custom_block_4_url",
+          "type": "text",
+          "description": "Custom block URL",
+          "label": "URL",
+          "value": "#"
+        }
+      ]
+    },
+    {
+      "label": "Category Icons",
+      "variables": [
+        {
+          "identifier": "show_category_icons",
+          "type": "checkbox",
+          "description": "Show category icons on the homepage",
+          "label": "Show category icons",
+          "value": true
+        }
+      ]
+    },
+    {
+      "label": "Category 1 Icon",
+      "variables": [
+        {
+          "identifier": "category_icon_1_id",
+          "type": "text",
+          "description": "Category Id",
+          "label": "Id",
+          "value": "360005639193"
+        },
+        {
+          "identifier": "category_icon_1_icon",
+          "type": "file",
+          "description": "The recommended dimensions: 100x100px",
+          "label": "Icon"
+        }
+      ]
+    },
+    {
+      "label": "Category 2 Icon",
+      "variables": [
+        {
+          "identifier": "category_icon_2_id",
+          "type": "text",
+          "description": "Category Id",
+          "label": "Id",
+          "value": "360005639213"
+        },
+        {
+          "identifier": "category_icon_2_icon",
+          "type": "file",
+          "description": "The recommended dimensions: 100x100px",
+          "label": "Icon"
+        }
+      ]
+    },
+    {
+      "label": "Category 3 Icon",
+      "variables": [
+        {
+          "identifier": "category_icon_3_id",
+          "type": "text",
+          "description": "Category Id",
+          "label": "Id",
+          "value": "360004552154"
+        },
+        {
+          "identifier": "category_icon_3_icon",
+          "type": "file",
+          "description": "The recommended dimensions: 100x100px",
+          "label": "Icon"
+        }
+      ]
+    },
+    {
+      "label": "Category 4 Icon",
+      "variables": [
+        {
+          "identifier": "category_icon_4_id",
+          "type": "text",
+          "description": "Category Id",
+          "label": "Id",
+          "value": "360005639233"
+        },
+        {
+          "identifier": "category_icon_4_icon",
+          "type": "file",
+          "description": "The recommended dimensions: 100x100px",
+          "label": "Icon"
+        }
+      ]
+    },
+    {
+      "label": "Category 5 Icon",
+      "variables": [
+        {
+          "identifier": "category_icon_5_id",
+          "type": "text",
+          "description": "Category Id",
+          "label": "Id",
+          "value": "360004592894"
+        },
+        {
+          "identifier": "category_icon_5_icon",
+          "type": "file",
+          "description": "The recommended dimensions: 100x100px",
+          "label": "Icon"
+        }
+      ]
+    },
+    {
+      "label": "Category 6 Icon",
+      "variables": [
+        {
+          "identifier": "category_icon_6_id",
+          "type": "text",
+          "description": "Category Id",
+          "label": "Id",
+          "value": "115000284613"
+        },
+        {
+          "identifier": "category_icon_6_icon",
+          "type": "file",
+          "description": "The recommended dimensions: 100x100px",
+          "label": "Icon"
+        }
+      ]
+    },
+    {
+      "label": "Category 7 Icon",
+      "variables": [
+        {
+          "identifier": "category_icon_7_id",
+          "type": "text",
+          "description": "Category Id",
+          "label": "Id",
+          "value": "360002644953"
+        },
+        {
+          "identifier": "category_icon_7_icon",
+          "type": "file",
+          "description": "The recommended dimensions: 100x100px",
+          "label": "Icon"
+        }
+      ]
+    },
+    {
+      "label": "Category 8 Icon",
+      "variables": [
+        {
+          "identifier": "category_icon_8_id",
+          "type": "text",
+          "description": "Category Id",
+          "label": "Id",
+          "value": "360004592934"
+        },
+        {
+          "identifier": "category_icon_8_icon",
+          "type": "file",
+          "description": "The recommended dimensions: 100x100px",
+          "label": "Icon"
+        }
+      ]
+    },
+    {
+      "label": "Category 9 Icon",
+      "variables": [
+        {
+          "identifier": "category_icon_9_id",
+          "type": "text",
+          "description": "Category Id",
+          "label": "Id",
+          "value": "360004592954"
+        },
+        {
+          "identifier": "category_icon_9_icon",
+          "type": "file",
+          "description": "The recommended dimensions: 100x100px",
+          "label": "Icon"
+        }
+      ]
+    },
+    {
+      "label": "Category 10 Icon",
+      "variables": [
+        {
+          "identifier": "category_icon_10_id",
+          "type": "text",
+          "description": "Category Id",
+          "label": "Id",
+          "value": "1500001342921"
+        },
+        {
+          "identifier": "category_icon_10_icon",
+          "type": "file",
+          "description": "The recommended dimensions: 100x100px",
+          "label": "Icon"
+        }
+      ]
+    },
+    {
+      "label": "Category 11 Icon",
+      "variables": [
+        {
+          "identifier": "category_icon_11_id",
+          "type": "text",
+          "description": "Category Id",
+          "label": "Id",
+          "value": "1500001164481"
+        },
+        {
+          "identifier": "category_icon_11_icon",
+          "type": "file",
+          "description": "The recommended dimensions: 100x100px",
+          "label": "Icon"
+        }
+      ]
+    },
+    {
+      "label": "Category 12 Icon",
+      "variables": [
+        {
+          "identifier": "category_icon_12_id",
+          "type": "text",
+          "description": "Category Id",
+          "label": "Id",
+          "value": "4953807176727"
+        },
+        {
+          "identifier": "category_icon_12_icon",
+          "type": "file",
+          "description": "The recommended dimensions: 100x100px",
+          "label": "Icon"
+        }
+      ]
+    },
+    {
+      "label": "Category 13 Icon",
+      "variables": [
+        {
+          "identifier": "category_icon_13_id",
+          "type": "text",
+          "description": "Category Id",
+          "label": "Id",
+          "value": "4551956937367"
+        },
+        {
+          "identifier": "category_icon_13_icon",
+          "type": "file",
+          "description": "The recommended dimensions: 100x100px",
+          "label": "Icon"
+        }
+      ]
+    },
+    {
+      "label": "Category 14 Icon",
+      "variables": [
+        {
+          "identifier": "category_icon_14_id",
+          "type": "text",
+          "description": "Category Id",
+          "label": "Id",
+          "value": "360004593014"
+        },
+        {
+          "identifier": "category_icon_14_icon",
+          "type": "file",
+          "description": "The recommended dimensions: 100x100px",
+          "label": "Icon"
+        }
+      ]
+    },
+    {
+      "label": "Category 15 Icon",
+      "variables": [
+        {
+          "identifier": "category_icon_15_id",
+          "type": "text",
+          "description": "Category Id",
+          "label": "Id",
+          "value": "360004592994"
+        },
+        {
+          "identifier": "category_icon_15_icon",
+          "type": "file",
+          "description": "The recommended dimensions: 100x100px",
+          "label": "Icon"
+        }
+      ]
+    },
+    {
+      "label": "Category 16 Icon",
+      "variables": [
+        {
+          "identifier": "category_icon_16_id",
+          "type": "text",
+          "description": "Category Id",
+          "label": "Id",
+          "value": "4551956937367"
+        },
+        {
+          "identifier": "category_icon_16_icon",
+          "type": "file",
+          "description": "The recommended dimensions: 100x100px",
+          "label": "Icon"
+        }
+      ]
+    },
+    {
+      "label": "Category 17 Icon",
+      "variables": [
+        {
+          "identifier": "category_icon_17_id",
+          "type": "text",
+          "description": "Category Id",
+          "label": "Id",
+          "value": "360000591374"
+        },
+        {
+          "identifier": "category_icon_17_icon",
+          "type": "file",
+          "description": "The recommended dimensions: 100x100px",
+          "label": "Icon"
+        }
+      ]
+    },
+    {
+      "label": "Category 18 Icon",
+      "variables": [
+        {
+          "identifier": "category_icon_18_id",
+          "type": "text",
+          "description": "Category Id",
+          "label": "Id",
+          "value": "1500000054961"
+        },
+        {
+          "identifier": "category_icon_18_icon",
+          "type": "file",
+          "description": "The recommended dimensions: 100x100px",
+          "label": "Icon"
+        }
+      ]
+    },
+    {
+      "label": "Category 19 Icon",
+      "variables": [
+        {
+          "identifier": "category_icon_19_id",
+          "type": "text",
+          "description": "Category Id",
+          "label": "Id",
+          "value": "4551956937367"
+        },
+        {
+          "identifier": "category_icon_19_icon",
+          "type": "file",
+          "description": "The recommended dimensions: 100x100px",
+          "label": "Icon"
+        }
+      ]
+    },
+    {
+      "label": "Category 20 Icon",
+      "variables": [
+        {
+          "identifier": "category_icon_20_id",
+          "type": "text",
+          "description": "Category Id",
+          "label": "Id",
+          "value": "3600025770594"
+        },
+        {
+          "identifier": "category_icon_20_icon",
+          "type": "file",
+          "description": "The recommended dimensions: 100x100px",
+          "label": "Icon"
+        }
+      ]
+    },
+    {
+      "label": "Formatting content colors",
+      "variables": [
+        {
+          "identifier": "brand_info",
+          "type": "color",
+          "description": "Brand info color",
+          "label": "Brand info color",
+          "value": "rgba(0, 94, 166, 1)"
+        },
+        {
+          "identifier": "brand_success",
+          "type": "color",
+          "description": "Brand success color",
+          "label": "Brand success color",
+          "value": "#504d7f"
+        },
+        {
+          "identifier": "brand_warning",
+          "type": "color",
+          "description": "Brand warning color",
+          "label": "Brand warning color",
+          "value": "#f49e44"
+        },
+        {
+          "identifier": "brand_danger",
+          "type": "color",
+          "description": "Brand danger color",
+          "label": "Brand danger color",
+          "value": "#ff5252"
+        }
+      ]
+    },
+    {
+      "label": "Topbar",
+      "variables": [
+        {
+          "identifier": "topbar_text_color",
+          "type": "color",
+          "description": "Topbar text color",
+          "label": "Topbar text color",
+          "value": "#fff"
+        },
+        {
+          "identifier": "topbar_link_color",
+          "type": "color",
+          "description": "Topbar link color",
+          "label": "Topbar link color",
+          "value": "rgba(255, 255, 255, 1)"
+        },
+        {
+          "identifier": "topbar_button_color",
+          "type": "color",
+          "description": "Topbar button color",
+          "label": "Topbar button color",
+          "value": "rgba(255, 255, 255, 1)"
+        },
+        {
+          "identifier": "help_center_title",
+          "type": "text",
+          "description": "Help center title",
+          "label": "Help center title",
+          "value": "Aquera Help Center"
+        },
+        {
+          "identifier": "toggle_custom_link",
+          "type": "checkbox",
+          "description": "Show or hide the custom link",
+          "label": "Show Custom Link",
+          "value": true
+        },
+        {
+          "identifier": "topbar_custom_link_title",
+          "type": "text",
+          "description": "Topbar custom link title",
+          "label": "Custom link title",
+          "value": "Aquera Website"
+        },
+        {
+          "identifier": "topbar_custom_link_url",
+          "type": "text",
+          "description": "Topbar custom link URL",
+          "label": "Custom link URL",
+          "value": "https://www.aquera.com"
+        }
+      ]
+    },
+    {
+      "label": "Footer",
+      "variables": [
+        {
+          "identifier": "footer_text_color",
+          "type": "color",
+          "description": "Footer text color",
+          "label": "Text color",
+          "value": "#222"
+        },
+        {
+          "identifier": "footer_link_color",
+          "type": "color",
+          "description": "Footer link color",
+          "label": "Link color",
+          "value": "#276FD0"
+        },
+        {
+          "identifier": "footer_social_link_color",
+          "type": "color",
+          "description": "Footer social media links color",
+          "label": "Social media icon color",
+          "value": "#222"
+        },
+        {
+          "identifier": "footer_submit_ticket_title",
+          "type": "text",
+          "description": "Footer submit ticket title",
+          "label": "Submit ticket title",
+          "value": ""
+        },
+        {
+          "identifier": "footer_submit_ticket_subtitle",
+          "type": "text",
+          "description": "Footer submit ticket subtitle",
+          "label": "Submit ticket subtitle",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "label": "Footer social media links",
+      "variables": [
+        {
+          "identifier": "toggle_facebook_icon",
+          "type": "checkbox",
+          "description": "Show or hide the Facebook icon",
+          "label": "Show Facebook icon",
+          "value": false
+        },
+        {
+          "identifier": "facebook_url",
+          "type": "text",
+          "description": "URL to Facebook account",
+          "label": "Facebook",
+          "value": "https://facebook.com"
+        },
+        {
+          "identifier": "toggle_twitter_icon",
+          "type": "checkbox",
+          "description": "Show or hide the Twitter icon",
+          "label": "Show Twitter icon",
+          "value": false
+        },
+        {
+          "identifier": "twitter_url",
+          "type": "text",
+          "description": "URL to Twitter account",
+          "label": "Twitter",
+          "value": "https://twitter.com"
+        },
+        {
+          "identifier": "toggle_youtube_icon",
+          "type": "checkbox",
+          "description": "Show or hide the Youtube icon",
+          "label": "Show Youtube icon",
+          "value": false
+        },
+        {
+          "identifier": "youtube_url",
+          "type": "text",
+          "description": "URL to Youtueb account",
+          "label": "Youtube",
+          "value": "https://www.youtube.com"
+        },
+        {
+          "identifier": "toggle_linkedin_icon",
+          "type": "checkbox",
+          "description": "Show or hide the Linked in icon",
+          "label": "Show Linked in icon",
+          "value": true
+        },
+        {
+          "identifier": "linkedin_url",
+          "type": "text",
+          "description": "URL to Linked in account",
+          "label": "Linked in",
+          "value": "https://www.linkedin.com/company/aquera/"
+        },
+        {
+          "identifier": "toggle_instagram_icon",
+          "type": "checkbox",
+          "description": "Show or hide the Instagram icon",
+          "label": "Show Instagram icon",
+          "value": false
+        },
+        {
+          "identifier": "instagram_url",
+          "type": "text",
+          "description": "URL to Instagram account",
+          "label": "Instagram",
+          "value": "https://www.instagram.com/"
+        },
+        {
+          "identifier": "toggle_pinterest_icon",
+          "type": "checkbox",
+          "description": "Show or hide the Pinterest icon",
+          "label": "Show Pinterest icon",
+          "value": false
+        },
+        {
+          "identifier": "pinterest_url",
+          "type": "text",
+          "description": "URL to Pinterest account",
+          "label": "Pinterest",
+          "value": "https://www.Pinterest.com/"
+        }
+      ]
+    },
+    {
+      "label": "Article page elements",
+      "variables": [
+        {
+          "identifier": "show_article_author",
+          "type": "checkbox",
+          "description": "Show author image and name",
+          "label": "Author",
+          "value": true
+        },
+        {
+          "identifier": "show_article_comments",
+          "type": "checkbox",
+          "description": "Show comments on articles",
+          "label": "Comments",
+          "value": true
+        },
+        {
+          "identifier": "show_follow_article",
+          "type": "checkbox",
+          "description": "Users can follow a specific article",
+          "label": "Follow",
+          "value": true
+        }
+      ]
+    },
+    {
+      "label": "Section page elements",
+      "variables": [
+        {
+          "identifier": "show_follow_section",
+          "type": "checkbox",
+          "description": "Users can follow a specific section",
+          "label": "Follow",
+          "value": true
+        }
+      ]
+    },
+    {
+      "label": "Community post elements",
+      "variables": [
+        {
+          "identifier": "show_follow_community_post",
+          "type": "checkbox",
+          "description": "Users can follow a specific post",
+          "label": "Follow",
+          "value": false
+        }
+      ]
+    },
+    {
+      "label": "Community topic elements",
+      "variables": [
+        {
+          "identifier": "show_follow_community_topic",
+          "type": "checkbox",
+          "description": "Users can follow a specific topic",
+          "label": "Follow",
+          "value": false
+        }
+      ]
+    }
+  ]
+}

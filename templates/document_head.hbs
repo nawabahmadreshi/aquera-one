@@ -1,0 +1,106 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        @font-face {
+            font-family: 'Colfax';
+            src: url({{asset 'Colfax-MediumItalic.woff2'}}) format('woff2'),
+            url({{asset 'Colfax-MediumItalic.woff'}}) format('woff');
+            font-weight: 500;
+            font-style: italic;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Colfax';
+            src: url({{asset 'Colfax-Regular.woff2'}}) format('woff2'),
+            url({{asset 'Colfax-Regular.woff'}}) format('woff');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Colfax';
+            src: url({{asset 'Colfax-Medium.woff2'}}) format('woff2'),
+            url({{asset 'Colfax-Medium.woff'}}) format('woff');
+            font-weight: 500;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Colfax';
+            src: url({{asset 'Colfax-RegularItalic.woff2'}}) format('woff2'),
+            url({{asset 'Colfax-RegularItalic.woff'}}) format('woff');
+            font-weight: normal;
+            font-style: italic;
+            font-display: swap;
+        }
+
+        body {
+          font-family: 'Colfax';
+        }
+    </style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" />
+<link rel="stylesheet" href="//cdn.jsdelivr.net/highlight.js/9.10.0/styles/github.min.css" />
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/magnific-popup@1.1.0/dist/magnific-popup.min.css" />
+<link rel="stylesheet" href="{{asset 'toc.css'}}" />
+
+<script src="//cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/magnific-popup@1.1.0/dist/jquery.magnific-popup.min.js"></script>
+<script src="//cdn.jsdelivr.net/highlight.js/9.10.0/highlight.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/store.js/1.3.20/store.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/lz-string/1.4.4/lz-string.min.js"></script>
+
+<script src="{{asset 'lotus-utils.js'}}"></script>
+<script src="{{asset 'apidata-min.js'}}"></script>
+<!-- <link rel="stylesheet" href="{{asset 'sidenav.css'}}" />
+<script src="{{asset 'sidenav-min.js'}}"></script> -->
+<script src="{{asset 'prevnext-min.js'}}"></script>
+<script>
+  window.LotusConfig = {};
+  LotusConfig.css = {
+    activeClass: 'is-active',
+    hiddenClass: 'is-hidden',
+    topbarLarge: 'topbar--large',
+    topbarSmall: 'topbar--small',
+    topbarNavActive: 'topbar__nav--filled',
+    topbarScroll: 'topbar__nav--white'
+
+  };
+  LotusConfig.icons = {
+    {{#if settings.show_category_icons}}
+    "{{settings.category_icon_1_id}}": "{{settings.category_icon_1_icon}}",
+    "{{settings.category_icon_2_id}}": "{{settings.category_icon_2_icon}}",
+    "{{settings.category_icon_3_id}}": "{{settings.category_icon_3_icon}}",
+    "{{settings.category_icon_4_id}}": "{{settings.category_icon_4_icon}}",
+    "{{settings.category_icon_5_id}}": "{{settings.category_icon_5_icon}}",
+    "{{settings.category_icon_6_id}}": "{{settings.category_icon_6_icon}}",
+    "{{settings.category_icon_7_id}}": "{{settings.category_icon_7_icon}}",
+    "{{settings.category_icon_8_id}}": "{{settings.category_icon_8_icon}}",
+    "{{settings.category_icon_9_id}}": "{{settings.category_icon_9_icon}}",
+    "{{settings.category_icon_10_id}}": "{{settings.category_icon_10_icon}}",
+    "{{settings.category_icon_11_id}}": "{{settings.category_icon_11_icon}}",
+    "{{settings.category_icon_12_id}}": "{{settings.category_icon_12_icon}}",
+    "{{settings.category_icon_13_id}}": "{{settings.category_icon_13_icon}}",
+    "{{settings.category_icon_14_id}}": "{{settings.category_icon_14_icon}}",
+    "{{settings.category_icon_15_id}}": "{{settings.category_icon_15_icon}}",
+    "{{settings.category_icon_16_id}}": "{{settings.category_icon_16_icon}}",
+    "{{settings.category_icon_17_id}}": "{{settings.category_icon_17_icon}}",
+    "{{settings.category_icon_18_id}}": "{{settings.category_icon_18_icon}}",
+    "{{settings.category_icon_19_id}}": "{{settings.category_icon_19_icon}}",
+    "{{settings.category_icon_20_id}}": "{{settings.category_icon_20_icon}}",
+    {{/if}}
+  }
+
+</script>
+<script src="{{asset 'defaults.js'}}"></script>
+<script src="{{asset 'formatting-components.js'}}"></script>
+<script src="{{asset 'menu.js'}}"></script>
+<script src="{{asset 'header.js'}}"></script>
+<script src="{{asset 'search-results.js'}}"></script>
+<script src="{{asset 'layout.js'}}"></script>
+<script src="{{asset 'lotus-icons.js'}}"></script>
+<script src="{{asset 'dropdown.js'}}"></script>
+<script src="{{asset 'notification.js'}}"></script>
+<script src="{{asset 'toc-min.js'}}"></script>

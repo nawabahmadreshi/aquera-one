@@ -1,0 +1,99 @@
+<a class="skip-navigation" tabindex="1" href="#main-content">{{t 'skip_navigation' }}</a>
+
+<div class="layout">
+  <div class="layout__head">
+    <header class="topbar is-hidden {{#is settings.hero_show_image 'yes'}}topbar--image{{/is}}" data-topbar>
+      <div class="topbar__nav container" data-topbar-nav>
+        <div class="container-inner topbar__container-inner">
+          <div class="topbar__inner">
+            <div class="topbar__col clearfix">
+              <div class="logo-wrapper">
+                <div class="logo">
+                  {{#link 'help_center'}}
+                    <img class="logo__main" src="{{settings.logo_main}}" alt="logo">
+                    <img class="logo__secondary" src="{{settings.logo}}" alt="logo">
+                  {{/link}}
+                </div>
+              </div>
+              <p class="help-center-name">
+                {{#if settings.toggle_translations}}
+                  {{dc settings.help_center_title}}
+                {{else}}
+                  {{settings.help_center_title}}
+                {{/if}}
+              </p>
+              <button type="button" role="button" aria-label="{{t 'toggle_navigation'}}" class="lines-button x" data-toggle-menu>
+                <span class="lines"></span></button>
+            </div>
+            <div class="topbar__col topbar__menu">
+              <div class="topbar__collapse" data-menu>
+                <div class="topbar__controls">
+                  {{#if settings.toggle_custom_link}}
+                    <a href="{{#if settings.toggle_translations}}{{dc settings.topbar_custom_link_url}}{{else}}{{settings.topbar_custom_link_url}}{{/if}}" class="topbar__link">
+                      {{#if settings.toggle_translations}}
+                        {{dc settings.topbar_custom_link_title}}
+                      {{else}}
+                        {{settings.topbar_custom_link_title}}
+                      {{/if}}
+                    </a>
+                  {{/if}}
+                  {{link 'community' class='topbar__link'}}
+                  {{link 'new_request' class='topbar__link'}}
+                  {{#if alternative_locales}}
+                    <div class="dropdown language-selector {{#if settings.toggle_flags}}language-selector--flags{{/if}}"
+                         aria-haspopup="true">
+                      <a data-url="{{current_locale.url}}" class="dropdown-toggle topbar__link">
+                        {{current_locale.name}}
+                      </a>
+                      <span class="dropdown-menu" role="menu">
+                        {{#each alternative_locales}}
+                          <a data-url="{{url}}" href="{{url}}" dir="{{direction}}" rel="nofollow"
+                             role="menuitem">
+                            {{name}}
+                          </a>
+                        {{/each}}
+                      </span>
+                    </div>
+                  {{/if}}
+                  {{#if signed_in}}
+                    <div id="user" class="dropdown user-info" aria-haspopup="true">
+                      <button class="dropdown-toggle dropdown-toggle--user topbar__link">
+                        {{user_avatar class="user-avatar user-avatar--topbar"}}
+                        {{user_name class="user-name"}}
+                      </button>
+                      <div class="dropdown-menu" role="menu">
+                        {{link "my_activities" role="menuitem"}}
+                        {{my_profile role="menuitem"}}
+                        {{change_password role="menuitem"}}
+                        {{link "sign_out" role="menuitem"}}
+                      </div>
+                    </div>
+                  {{else}}
+                    {{#link "sign_in" class='topbar__link'}}
+                      {{t 'sign_in'}}
+                    {{/link}}
+                  {{/if}}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="hero-unit is-hidden" data-hero-unit>
+          <div class="container-inner search-box search-box--hero-unit" data-search-box>
+            <div class="intro-title">
+              {{#if settings.toggle_translations}}
+                {{dc settings.hero_title}}
+              {{else}}
+                {{settings.hero_title}}
+              {{/if}}
+            </div>
+            {{search instant=true placeholder=settings.search_placeholder}}
+          </div>
+        </div>
+      </div>
+    </header>
+  </div>
+  <div class="layout__content">
